@@ -1,2 +1,4 @@
+# Ce fichier n'est lu par les moteurs que lorsque le site est à la racine d'un domaine (ex. migratrack.fr).
 User-agent: *
 Allow: /
+Sitemap: https://purpleyarek-cmyk.github.io/migratrack-site/sitemap.xml

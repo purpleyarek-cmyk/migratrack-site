@@ -23,10 +23,20 @@ Le site est entièrement statique (HTML et CSS). Il ne dépose aucun cookie et n
 ## À compléter avant de donner les liens à Apple
 
 - [ ] Remplacer `contact@migratrack.example` par la vraie adresse e-mail dans tous les fichiers.
-- [ ] Remplir les champs surlignés en jaune dans `mentions-legales.html` et `confidentialite.html` (nom de l'éditeur, statut, adresse).
+- [ ] Remplir les champs surlignés en jaune dans `mentions-legales.html` et `confidentialite.html` (nom de l'éditeur, statut, adresse, fournisseur de messagerie).
 - [ ] Vérifier que la politique de confidentialité décrit exactement ce que fait l'app : stockage uniquement sur l'iPhone, pas de compte, pas de serveur, pas de statistiques. Si l'app utilise iCloud, HealthKit, des notifications ou un outil d'analyse, il faut le dire.
 - [ ] Remplacer la maquette d'écran de l'accueil par de vraies captures de l'app, si vous le souhaitez.
 - [ ] Une fois l'app publiée, ajouter la bannière App Store (balise commentée dans le `<head>` de `index.html`).
+
+## Référencement Google
+
+1. Ouvrez [Google Search Console](https://search.google.com/search-console) et ajoutez la propriété « Préfixe de l'URL » : `https://purpleyarek-cmyk.github.io/migratrack-site/`.
+2. Choisissez la validation par **balise HTML** : copiez la balise `<meta name="google-site-verification" …>` dans le `<head>` de `index.html`, poussez, puis cliquez sur Valider.
+3. Dans **Sitemaps**, envoyez `sitemap.xml`.
+
+Note : `robots.txt` n'est lu par les moteurs que lorsque le site est à la racine d'un domaine. Sur l'adresse github.io actuelle, il est ignoré ; le sitemap s'envoie donc par Search Console.
+
+Si l'adresse du site change (nom de domaine), mettez à jour les balises `canonical` et `og:` de chaque page, `sitemap.xml` et `robots.txt`.
 
 ## Plus tard : nom de domaine
 
